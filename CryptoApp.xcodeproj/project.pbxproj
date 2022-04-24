@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		836E86492809A2C5006EB6D9 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E86482809A2C5006EB6D9 /* CoinDataService.swift */; };
 		838AD18B2808E5040035F0C5 /* CryptoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838AD18A2808E5040035F0C5 /* CryptoAppApp.swift */; };
 		838AD18D2808E5040035F0C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838AD18C2808E5040035F0C5 /* ContentView.swift */; };
 		838AD18F2808E5050035F0C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838AD18E2808E5050035F0C5 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		836E86482809A2C5006EB6D9 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 		838AD1872808E5040035F0C5 /* CryptoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		838AD18A2808E5040035F0C5 /* CryptoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAppApp.swift; sourceTree = "<group>"; };
 		838AD18C2808E5040035F0C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		836E86472809A29C006EB6D9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				836E86482809A2C5006EB6D9 /* CoinDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		838AD17E2808E5040035F0C5 = {
 			isa = PBXGroup;
 			children = (
@@ -70,9 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				838AD18A2808E5040035F0C5 /* CryptoAppApp.swift */,
-				838AD19B2808EDA60035F0C5 /* Core */,
-				838AD1AA280901460035F0C5 /* Models */,
 				838AD1982808EAA20035F0C5 /* Extensions */,
+				836E86472809A29C006EB6D9 /* Services */,
+				838AD1AA280901460035F0C5 /* Models */,
+				838AD19B2808EDA60035F0C5 /* Core */,
 				838AD18C2808E5040035F0C5 /* ContentView.swift */,
 				838AD18E2808E5050035F0C5 /* Assets.xcassets */,
 				838AD1902808E5050035F0C5 /* Preview Content */,
@@ -212,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				836E86492809A2C5006EB6D9 /* CoinDataService.swift in Sources */,
 				838AD1AE280907C40035F0C5 /* CoinRowView.swift in Sources */,
 				838AD1B4280916FE0035F0C5 /* HomeViewModel.swift in Sources */,
 				838AD1A22808F0C10035F0C5 /* CircleButton.swift in Sources */,
@@ -360,6 +372,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,6 +403,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
