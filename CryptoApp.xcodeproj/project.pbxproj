@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		836E86492809A2C5006EB6D9 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E86482809A2C5006EB6D9 /* CoinDataService.swift */; };
+		836E864C28161B4B006EB6D9 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E864B28161B4B006EB6D9 /* NetworkingManager.swift */; };
 		838AD18B2808E5040035F0C5 /* CryptoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838AD18A2808E5040035F0C5 /* CryptoAppApp.swift */; };
 		838AD18D2808E5040035F0C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838AD18C2808E5040035F0C5 /* ContentView.swift */; };
 		838AD18F2808E5050035F0C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838AD18E2808E5050035F0C5 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		836E86482809A2C5006EB6D9 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
+		836E864B28161B4B006EB6D9 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		838AD1872808E5040035F0C5 /* CryptoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		838AD18A2808E5040035F0C5 /* CryptoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAppApp.swift; sourceTree = "<group>"; };
 		838AD18C2808E5040035F0C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		836E864A28161B08006EB6D9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				836E864B28161B4B006EB6D9 /* NetworkingManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		838AD17E2808E5040035F0C5 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				838AD18A2808E5040035F0C5 /* CryptoAppApp.swift */,
+				836E864A28161B08006EB6D9 /* Utilities */,
 				838AD1982808EAA20035F0C5 /* Extensions */,
 				836E86472809A29C006EB6D9 /* Services */,
 				838AD1AA280901460035F0C5 /* Models */,
@@ -231,6 +242,7 @@
 				838AD19F2808EE130035F0C5 /* HomeView.swift in Sources */,
 				838AD18B2808E5040035F0C5 /* CryptoAppApp.swift in Sources */,
 				838AD19A2808EAB50035F0C5 /* Color.swift in Sources */,
+				836E864C28161B4B006EB6D9 /* NetworkingManager.swift in Sources */,
 				838AD1A42808F5310035F0C5 /* CircleButtonAnimationView.swift in Sources */,
 				838AD1B0280908290035F0C5 /* PreviewProvider.swift in Sources */,
 				838AD1B228090C630035F0C5 /* Double.swift in Sources */,
