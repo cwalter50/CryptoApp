@@ -11,6 +11,8 @@ struct PortfolioView: View {
     
     @EnvironmentObject private var vm: HomeViewModel
     
+    @Environment(\.dismiss) private var dismiss
+    
     @State private var selectedCoin: CoinModel? = nil
     @State private var quantityText: String = ""
     @State private var showCheckmark: Bool = false
@@ -30,7 +32,14 @@ struct PortfolioView: View {
             .navigationTitle("Edit Portfolio")
             .toolbar(content: {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    XMarkButton()
+                   
+                    Button(action: {
+                        dismiss()
+                    }, label: {
+                        Image(systemName: "xmark")
+                            .font(.headline)
+                    })
+//                    XMarkButton()
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     trailingNavBarButtons
