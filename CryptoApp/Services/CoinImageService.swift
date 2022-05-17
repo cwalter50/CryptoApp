@@ -30,11 +30,11 @@ class CoinImageService {
         // try to get it from the file manager first, if its not there than download it from internet.
         if let savedImage = fileManager.getImage(imageName: imageName, folderName: folderName ){
             image = savedImage
-            print("retreived Image from File Manager")
+//            print("retreived Image from File Manager")
         }
         else {
             downloadCoinImage()
-            print("Downloading image Now")
+//            print("Downloading image Now")
         }
     }
     
@@ -42,8 +42,7 @@ class CoinImageService {
     {
 
         guard let url = URL(string: coin.image) else { return } // coin.image is a urlString
-        
-        // Download Data using Combine. The teacher thinks it is the future of iOS Programming. Very powerful. A lot of the code for this has been refractored and put into static functions in NetworkingManager
+        // Download Data using Combine. The teacher thinks it is the future of iOS Programming with API's. Very powerful. A lot of the code for this has been refractored and put into static functions in NetworkingManager
         imageSubscription = NetworkingManager.download(url: url)
             .tryMap({ data -> UIImage? in
                 return UIImage(data: data)

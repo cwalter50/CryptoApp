@@ -122,7 +122,6 @@ struct CoinModel: Identifiable, Codable {
     var rank: Int {
         return Int(marketCapRank ?? 0)
     }
-    
 }
 
 struct SparklineIn7D: Codable {
