@@ -51,7 +51,6 @@ struct DetailView: View {
                     Divider()
                     additionalGrid
                     websiteSection
-                    
                 }
                 .padding()
             }

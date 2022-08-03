@@ -12,9 +12,11 @@ struct XMarkButton: View {
     // This was deprecated in iOS 15.  I no longer use this view... I use dismiss instead...
     @Environment(\.presentationMode) var presentationMode
     
+    
     var body: some View {
         Button(action: {
-            presentationMode.wrappedValue.dismiss()
+            presentationMode.wrappedValue.dismiss() // depreciated in iOS 15
+            
         }, label: {
             Image(systemName: "xmark")
                 .font(.headline)
